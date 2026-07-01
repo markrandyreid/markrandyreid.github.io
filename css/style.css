@@ -367,6 +367,30 @@ details[open] summary::after {
   text-decoration: underline;
 }
 
+/* PROJECT LIST */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.project-item a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.project-item a:hover {
+  text-decoration: underline;
+}
+
+.project-item p {
+  font-size: 0.85rem;
+  color: var(--mid);
+  margin-top: 4px;
+}
+
 /* DIVIDER */
 .divider {
   border: none;
