@@ -378,11 +378,33 @@ footer {
   color: var(--mid);
 }
 
+/* HAMBURGER */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--dark);
+  padding: 4px 8px;
+}
+
 /* RESPONSIVE */
-@media (max-width: 600px) {
-  nav { padding: 0 20px; }
+@media (max-width: 640px) {
+  nav { padding: 0 20px; flex-wrap: wrap; height: auto; min-height: 52px; }
+  .nav-toggle { display: block; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+    padding: 8px 0 16px;
+  }
+  nav ul.open { display: flex; }
+  nav ul li a { display: block; padding: 10px 0; font-size: 0.85rem; }
   .hero { padding: 64px 20px; }
   .hero h1 { font-size: 2rem; }
   .page-header { padding: 48px 20px 32px; }
   main { padding: 40px 20px; }
+  .card-grid { grid-template-columns: 1fr; }
 }

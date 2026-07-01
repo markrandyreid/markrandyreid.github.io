@@ -4,12 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mark Randy Reid</title>
+  <meta name="description" content="Mark Randy Reid — student and software engineer working across finance, technology, and media & entertainment. Based in London." />
+  <meta property="og:title" content="Mark Randy Reid" />
+  <meta property="og:description" content="Student and software engineer working across finance, technology, and media & entertainment. Based in London." />
+  <meta property="og:image" content="https://github.com/markrandyreid.png" />
+  <meta property="og:url" content="https://markrandyreid.com" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Mark Randy Reid" />
+  <meta name="twitter:description" content="Student and software engineer working across finance, technology, and media & entertainment." />
+  <meta name="twitter:image" content="https://github.com/markrandyreid.png" />
+  <link rel="icon" href="https://github.com/markrandyreid.png" type="image/png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
   <nav>
     <a href="index.html" class="logo"><img src="https://github.com/markrandyreid.png" alt="Mark Randy Reid" />Mark Randy Reid</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav ul').classList.toggle('open')">&#9776;</button>
     <ul>
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="academic.html">Academic</a></li>
@@ -36,7 +48,7 @@
     <section>
       <h2>Academic</h2>
       <div class="card-grid">
-        <a href="academic.html#economics" class="card">
+        <a href="https://github.com/markrandyreid/economics" target="_blank" class="card">
           <h3>Economics</h3>
           <p>Microeconomic theory, institutional economics, and applied economic analysis.</p>
           <span class="tag">Economics</span>
@@ -94,6 +106,11 @@
           <span class="tag">Python</span>
         </a>
       </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="font-size: 0.9rem;">Get in touch at <a href="mailto:rr@markrandyreid.com" style="color: var(--blue); text-decoration: none; border-bottom: 1px solid var(--blue);">rr@markrandyreid.com</a></p>
     </section>
 
   </main>
