@@ -290,7 +290,7 @@ details summary {
   padding: 18px 0;
   cursor: pointer;
   list-style: none;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   font-weight: 500;
   color: var(--dark);
   user-select: none;
@@ -312,6 +312,11 @@ details[open] summary::after {
 
 .details-body {
   padding: 0 0 28px;
+}
+
+.course-desc {
+  margin-top: 4px;
+  margin-bottom: 12px;
 }
 
 /* COURSE */
