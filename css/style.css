@@ -223,6 +223,57 @@ section h2 {
   text-decoration: underline;
 }
 
+/* TABS */
+.course-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.course-tabs button {
+  background: none;
+  border: none;
+  padding: 8px 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--mid);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition: color 0.15s;
+  font-family: inherit;
+}
+
+.course-tabs button:hover {
+  color: var(--dark);
+}
+
+.course-tabs button.active {
+  color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+.tab-panel {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--mid);
+  padding: 4px 0 16px;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-panel a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.tab-panel a:hover {
+  text-decoration: underline;
+}
+
 /* DROPDOWN (details/summary) */
 details {
   border-bottom: 1px solid var(--border);
