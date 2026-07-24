@@ -151,7 +151,18 @@
 
     <section id="cs">
       <h2>AI &amp; Computer Science</h2>
-      <p style="color: var(--mid); font-size: 0.85rem;">Courses coming soon.</p>
+
+      <details>
+        <summary>Introduction to Artificial Intelligence</summary>
+        <div class="details-body">
+          <div class="course-tabs">
+            <button class="active" onclick="switchTab(this, 'ai-intro-notes')">Notes</button>
+            <button onclick="switchTab(this, 'ai-intro-assignments')">Assignments</button>
+          </div>
+          <div id="ai-intro-notes" class="tab-panel active">—</div>
+          <div id="ai-intro-assignments" class="tab-panel">—</div>
+        </div>
+      </details>
     </section>
 
   </main>
